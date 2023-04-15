@@ -955,6 +955,7 @@ body.light-theme {
     }
 }
 
+/* Breakpoint for medium-large devices */
 @media screen and (min-width: 767px) {
     .nav__menu {
         visibility: hidden;
@@ -979,6 +980,14 @@ body.light-theme {
         max-width: calc((3 / 12) * 100%);
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+    }
+
+    .footer {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .footer__copy {
+        margin: 0;
     }
 }
 /* For large devices */
