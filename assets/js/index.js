@@ -60,8 +60,25 @@ $(document).ready(() => {
                 windowTopOffset < offsetTop + outerHeight
             ) {
                 let elementId = $(element).attr("id");
-                $(".nav__link.active").removeClass("active");
-                $(".nav__link[href='#" + elementId + "']").addClass("active");
+                // Toggle active class for menu icon
+                {
+                    $(".nav__link.nav__link--active").removeClass(
+                        "nav__link--active"
+                    );
+                    $(".nav__link[href='#" + elementId + "']").addClass(
+                        "nav__link--active"
+                    );
+                }
+
+                // Toggle active class for menu text
+                {
+                    $(".nav__link-text.nav__link-text--active").removeClass(
+                        "nav__link-text--active"
+                    );
+                    $(".nav__link-text[href='#" + elementId + "']").addClass(
+                        "nav__link-text--active"
+                    );
+                }
             }
         });
     }
@@ -71,7 +88,6 @@ $(document).ready(() => {
         const themeBtn = $("#theme-button");
         const lightTheme = "light-theme";
         const sunIconTheme = "bx-sun";
-        const darkIconTheme = "bx-moon";
 
         // Previously selected to topic (if user selected)
         const selectedTheme = localStorage.getItem("selected-theme");
@@ -107,6 +123,26 @@ $(document).ready(() => {
         });
     }
     /*=============== SCROLL REVEAL ANIMATION ===============*/
+    function enableScrollReveal() {
+        const scrollReveal = ScrollReveal({
+            origin: "top",
+            distance: "60px",
+            duration: 2000,
+            delay: 400,
+            reset: true,
+        });
 
+        scrollReveal.reveal("#home");
+        scrollReveal.reveal("#about");
+        scrollReveal.reveal("#skills");
+        scrollReveal.reveal("#projects");
+        scrollReveal.reveal("#contact");
+        // scrollReveal.reveal(".home__handle", { delay: 700 });
+        // scrollReveal.reveal(".home__social, .home__scroll", {
+        //     delay: 700,
+        //     origin: "bottom",
+        // });
+    }
+    enableScrollReveal();
     /*=============== CHANGE BACKGROUND FOR LIGHT THEME ===============*/
 });

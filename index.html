@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sr">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,6 +15,11 @@
 
         <!-- =========== CSS =========== -->
         <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- =========== ScrollReveal =========== -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            ScrollReveal({ reset: true });
+        </script>
     </head>
 
     <body>
@@ -26,7 +31,7 @@
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active">
+                            <a href="#home" class="nav__link nav__link--active">
                                 <i class="bx bx-home-alt"></i>
                             </a>
                         </li>
@@ -52,7 +57,36 @@
                         </li>
                     </ul>
                 </div>
-
+                <div class="nav__menu-text">
+                    <ul class="nav__list-text">
+                        <li class="nav__item-text">
+                            <a
+                                href="#home"
+                                class="nav__link-text nav__link-text--active"
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav__item-text">
+                            <a href="#about" class="nav__link-text"> About </a>
+                        </li>
+                        <li class="nav__item-text">
+                            <a href="#skills" class="nav__link-text">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="nav__item-text">
+                            <a href="#projects" class="nav__link-text">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="nav__item-text">
+                            <a href="#contact" class="nav__link-text">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <!-- Theme change button -->
                 <i class="bx bx-moon change-theme" id="theme-button"></i>
             </nav>
@@ -80,35 +114,37 @@
                             <a href="#about" class="button">About me</a>
                         </div>
                     </div>
-                    <div class="home__handle">
-                        <img
-                            src="assets/imgs/background.png"
-                            alt=""
-                            class="home__img"
-                        />
-                    </div>
+                    <div class="home__group">
+                        <div class="home__handle">
+                            <img
+                                src="assets/imgs/background.png"
+                                alt=""
+                                class="home__img"
+                            />
+                        </div>
 
-                    <div class="home__social">
-                        <a
-                            href="https://www.linkedin.com/in/hoang-nguyen-ba-nbh251/"
-                            target="_blank"
-                            class="home__social-link"
-                        >
-                            <i class="bx bxl-linkedin"></i>
-                        </a>
-                        <a
-                            href="https://github.com/hoanguyen2501"
-                            target="_blank"
-                            class="home__social-link"
-                        >
-                            <i class="bx bxl-github"></i>
+                        <div class="home__social">
+                            <a
+                                href="https://www.linkedin.com/in/hoang-nguyen-ba-nbh251/"
+                                target="_blank"
+                                class="home__social-link"
+                            >
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                            <a
+                                href="https://github.com/hoanguyen2501"
+                                target="_blank"
+                                class="home__social-link"
+                            >
+                                <i class="bx bxl-github"></i>
+                            </a>
+                        </div>
+
+                        <a href="#about" class="home__scroll">
+                            <i class="bx bx-mouse home__scroll-icon"></i>
+                            <span class="home__scroll-name">Scroll down</span>
                         </a>
                     </div>
-
-                    <a href="#about" class="home__scroll">
-                        <i class="bx bx-mouse home__scroll-icon"></i>
-                        <span class="home__scroll-name">Scroll down</span>
-                    </a>
                 </div>
             </section>
 
