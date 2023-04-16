@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="sr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hnb.</title>
 
     <!-- =========== BOXICONS =========== -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- =========== SWIPER CSS =========== -->
 
     <!-- =========== CSS =========== -->
@@ -16,258 +18,302 @@
     <!-- =========== ScrollReveal =========== -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal({ reset: true });
+      ScrollReveal({ reset: true });
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- =========== Header & Navbar =========== -->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="/" class="nav__logo">HoangNB.</a>
+      <nav class="nav container">
+        <a href="/" class="nav__logo">HoangNB.</a>
 
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link nav__link--active">
-                            <i class="bx bx-home-alt"></i>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="bx bx-user"></i>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="bx bx-book-alt"></i>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">
-                            <i class="bx bx-briefcase-alt-2"></i>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="bx bx-message-square-dots"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav__menu-text">
-                <ul class="nav__list-text">
-                    <li class="nav__item-text">
-                        <a href="#home" class="nav__link-text nav__link-text--active">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav__item-text">
-                        <a href="#about" class="nav__link-text"> About </a>
-                    </li>
-                    <li class="nav__item-text">
-                        <a href="#skills" class="nav__link-text">
-                            Skills
-                        </a>
-                    </li>
-                    <li class="nav__item-text">
-                        <a href="#projects" class="nav__link-text">
-                            Projects
-                        </a>
-                    </li>
-                    <li class="nav__item-text">
-                        <a href="#contact" class="nav__link-text">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Theme change button -->
-            <i class="bx bx-moon change-theme" id="theme-button"></i>
-        </nav>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link nav__link--active">
+                <i class="bx bx-home-alt"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bx-user"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-book-alt"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <i class="bx bx-briefcase-alt-2"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-message-square-dots"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__menu-text">
+          <ul class="nav__list-text">
+            <li class="nav__item-text">
+              <a href="#home" class="nav__link-text nav__link-text--active">
+                Home
+              </a>
+            </li>
+            <li class="nav__item-text">
+              <a href="#about" class="nav__link-text"> About </a>
+            </li>
+            <li class="nav__item-text">
+              <a href="#skills" class="nav__link-text"> Skills </a>
+            </li>
+            <li class="nav__item-text">
+              <a href="#projects" class="nav__link-text"> Projects </a>
+            </li>
+            <li class="nav__item-text">
+              <a href="#contact" class="nav__link-text"> Contact </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Theme change button -->
+        <div class="nav__theme-btn">
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+        </div>
+      </nav>
     </header>
 
     <!-- =========== Main =========== -->
     <main class="main" id="main">
-        <!-- Home Section -->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <span class="home__greeting">Hello, I'm</span>
-                    <h1 class="home__name">Hoang Nguyen Ba</h1>
-                    <h3 class="home__position">Backend Intern</h3>
+      <!-- Home Section -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__greeting">Hello, I'm</span>
+            <h1 class="home__name">Hoang Nguyen Ba</h1>
+            <h3 class="home__position">Backend Intern</h3>
 
-                    <div class="home__buttons">
-                        <a href="assets/imgs/cv/Backend_Intern_NguyenBaHoang_CV.pdf" download=""
-                            class="button button--ghost">
-                            Download CV
-                        </a>
+            <div class="home__buttons">
+              <a
+                href="assets/imgs/cv/Backend_Intern_NguyenBaHoang_CV.pdf"
+                download=""
+                class="button button--ghost"
+              >
+                Download CV
+              </a>
 
-                        <a href="#about" class="button">About me</a>
-                    </div>
-                </div>
-                <div class="home__group">
-                    <div class="home__handle">
-                        <img src="https://i.ibb.co/sCxYw79/background.png" alt="" class="home__img" />
-                    </div>
-
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/hoang-nguyen-ba-nbh251/" target="_blank"
-                            class="home__social-link">
-                            <i class="bx bxl-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/hoanguyen2501" target="_blank" class="home__social-link">
-                            <i class="bx bxl-github"></i>
-                        </a>
-                    </div>
-
-                    <a href="#about" class="home__scroll">
-                        <i class="bx bx-mouse home__scroll-icon"></i>
-                        <span class="home__scroll-name">Scroll down</span>
-                    </a>
-                </div>
+              <a href="#about" class="button">About me</a>
             </div>
-        </section>
+          </div>
+          <div class="home__group">
+            <div class="home__handle">
+              <img
+                src="https://i.ibb.co/sCxYw79/background.png"
+                alt=""
+                class="home__img"
+              />
+              <img
+                src="assets/imgs/background-light-theme.png"
+                alt=""
+                class="home__img-light"
+              />
+            </div>
 
-        <!-- About Section -->
-        <section class="about section" id="about">
-            <span class="section__subtitle">Intro</span>
-            <h2 class="section__title">About me</h2>
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/hoang-nguyen-ba-nbh251/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/hoanguyen2501"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
 
-            <div class="about__container container grid">
-                <img src="https://i.ibb.co/7SkFrJC/user.png" alt="My Avatar" class="about__img" />
+            <a href="#about" class="home__scroll">
+              <i class="bx bx-mouse home__scroll-icon"></i>
+              <span class="home__scroll-name">Scroll down</span>
+            </a>
+          </div>
+        </div>
+      </section>
 
-                <div class="about__data">
-                    <div class="about__info">
-                        <div class="about__box">
-                            <i class="bx bxs-graduation about__icon"></i>
-                            <h3 class="about__title">Graduation</h3>
-                            <span class="about__subtitle">Expected 2023</span>
-                        </div>
-                        <div class="about__box">
-                            <i class="bx bx-award about__icon"></i>
-                            <h3 class="about__title">GPA (4.0-scale)</h3>
-                            <span class="about__subtitle">3.2</span>
-                        </div>
-                        <div class="about__box">
-                            <i class="bx bxs-school about__icon"></i>
-                            <h3 class="about__title">School</h3>
-                            <span class="about__subtitle">University of Information Technology</span>
-                        </div>
-                    </div>
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <span class="section__subtitle">Intro</span>
+        <h2 class="section__title">About me</h2>
 
-                    <div class="about__description">
-                        <!-- I am a 4th year student at Faculty of Information
+        <div class="about__container container grid">
+          <img
+            src="https://i.ibb.co/2s1FCdn/user.jpg"
+            alt="My Avatar"
+            class="about__img"
+          />
+
+          <div class="about__data">
+            <div class="about__info">
+              <div class="about__box">
+                <i class="bx bxs-graduation about__icon"></i>
+                <h3 class="about__title">Graduation</h3>
+                <span class="about__subtitle">Expected 2023</span>
+              </div>
+              <div class="about__box">
+                <i class="bx bx-award about__icon"></i>
+                <h3 class="about__title">GPA (4.0-scale)</h3>
+                <span class="about__subtitle">3.2</span>
+              </div>
+              <div class="about__box">
+                <i class="bx bxs-school about__icon"></i>
+                <h3 class="about__title">School</h3>
+                <span class="about__subtitle"
+                  >University of Information Technology</span
+                >
+              </div>
+            </div>
+
+            <div class="about__description">
+              <!-- I am a 4th year student at Faculty of Information
                             System, University of Information Technology,
                             Vietnam National University, Ho Chi Minh City.
                             <br /> -->
-                        As an intern, I aspire to gain lots of knowledge
-                        about web development as well as knowledge about
-                        software development through practical projects and
-                        become a Web Developer after the internship.
-                    </div>
-                    <a href="#contact" class="button">Contact me</a>
-                </div>
+              As an intern, I aspire to gain lots of knowledge about web
+              development as well as knowledge about software development
+              through practical projects and become a Web Developer after the
+              internship.
             </div>
-        </section>
+            <a href="#contact" class="button">Contact me</a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Skills Section -->
-        <section class="skills section" id="skills">
-            <span class="section__subtitle">My Skills & Abilities</span>
-            <h2 class="section__title">What I'm learning ...</h2>
+      <!-- Skills Section -->
+      <section class="skills section" id="skills">
+        <span class="section__subtitle">My Skills & Abilities</span>
+        <h2 class="section__title">What I'm learning ...</h2>
 
-            <div class="skills__container container grid">
-                <div class="skills__content">
-                    <div class="skills__box"></div>
-                </div>
+        <div class="skills__container container grid">
+          <div class="skills__content">
+            <div class="skills__box"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects section" id="projects">
+        <span class="section__subtitle">My projects</span>
+        <h2 class="section__title">Recent Projects</h2>
+
+        <div class="projects__container container grid">
+          <div class="projects__content"></div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact section" id="contact">
+        <span class="section__subtitle">Get in touch</span>
+        <h2 class="section__title">Contact me</h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Talk to me</h3>
+
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="bx bx-mail-send contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">bahoang2501@gmail.com</span>
+                <a
+                  href="mailto:bahoang2501@gmail.com"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+              <div class="contact__card">
+                <i class="bx bx-phone-call contact__card-icon"></i>
+                <h3 class="contact__card-title">Phone</h3>
+                <span class="contact__card-data">(+84) 867-765-003</span>
+                <a
+                  href="tel://0867764003"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Call me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
             </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="projects section" id="projects">
-            <span class="section__subtitle">My projects</span>
-            <h2 class="section__title">Recent Projects</h2>
-
-            <div class="projects__container container grid">
-                <div class="projects__content">
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact section" id="contact">
-            <span class="section__subtitle">Get in touch</span>
-            <h2 class="section__title">Contact me</h2>
-
-            <div class="contact__container container grid">
-                <div class="contact__content">
-                    <h3 class="contact__title">Talk to me</h3>
-
-                    <div class="contact__info">
-                        <div class="contact__card">
-                            <i class="bx bx-mail-send contact__card-icon"></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">bahoang2501@gmail.com</span>
-                            <a href="mailto:bahoang2501@gmail.com" target="_blank" class="contact__button">
-                                Write me
-                                <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                            </a>
-                        </div>
-                        <div class="contact__card">
-                            <i class="bx bx-phone-call contact__card-icon"></i>
-                            <h3 class="contact__card-title">Phone</h3>
-                            <span class="contact__card-data">(+84) 867-765-003</span>
-                            <a href="tel://0867764003" target="_blank" class="contact__button">
-                                Call me
-                                <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact__content"></div>
-            </div>
-        </section>
+          </div>
+          <div class="contact__content"></div>
+        </div>
+      </section>
     </main>
 
     <!-- =========== Footer =========== -->
     <footer class="footer" id="footer">
-        <h1 class="footer__title">HoangNB</h1>
-        <ul class="footer__list">
-            <li class="footer__item">
-                <a href="#about" class="footer__link">About</a>
-            </li>
-            <li class="footer__item">
-                <a href="#projects" class="footer__link">Projects</a>
-            </li>
-            <li class="footer__item">
-                <a href="#contact" class="footer__link">Contact</a>
-            </li>
-        </ul>
+      <h1 class="footer__title">HoangNB</h1>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#about" class="footer__link">About</a>
+        </li>
+        <li class="footer__item">
+          <a href="#projects" class="footer__link">Projects</a>
+        </li>
+        <li class="footer__item">
+          <a href="#contact" class="footer__link">Contact</a>
+        </li>
+      </ul>
 
-        <ul class="footer__social">
-            <li class="footer__social-item">
-                <a href="https://www.linkedin.com/in/hoang-nguyen-ba-nbh251/" target="_blank"
-                    class="footer__social-link"><i class="bx bxl-linkedin footer__social-icon"></i></a>
-            </li>
-            <li class="footer__social-item">
-                <a href="https://twitter.com/HoangNB2501" target="_blank" class="footer__social-link"><i
-                        class="bx bxl-twitter footer__social-icon"></i></a>
-            </li>
-            <li class="footer__social-item">
-                <a href="https://www.instagram.com/nbh.251/" target="_blank" class="footer__social-link"><i
-                        class="bx bxl-instagram footer__social-icon"></i></a>
-            </li>
-        </ul>
-        <p class="footer__copy"></p>
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a
+            href="https://www.linkedin.com/in/hoang-nguyen-ba-nbh251/"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="bx bxl-linkedin footer__social-icon"></i
+          ></a>
+        </li>
+        <li class="footer__social-item">
+          <a
+            href="https://twitter.com/HoangNB2501"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="bx bxl-twitter footer__social-icon"></i
+          ></a>
+        </li>
+        <li class="footer__social-item">
+          <a
+            href="https://www.instagram.com/nbh.251/"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="bx bxl-instagram footer__social-icon"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="footer__copy"></p>
 
-        <a href="#home" class="footer__button-back-home"><i class="bx bxs-up-arrow-alt"></i></a>
+      <a href="#home" class="footer__button-back-home"
+        ><i class="bx bxs-up-arrow-alt"></i
+      ></a>
     </footer>
     <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- JavaScript -->
     <script src="assets/js/index.js"></script>
-</body>
-
+  </body>
 </html>

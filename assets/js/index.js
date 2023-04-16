@@ -244,6 +244,7 @@ $(document).ready(() => {
             localStorage.setItem("selected-icon", getCurrentIcon());
         });
     }
+    toggleTheme();
     /*=============== SCROLL REVEAL ANIMATION ===============*/
     function enableScrollReveal() {
         const scrollReveal = ScrollReveal({
