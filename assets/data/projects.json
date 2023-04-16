@@ -1,0 +1,33 @@
+[
+    {
+        "name": "The Coffee Shop",
+        "description": "The Coffee Shop Webiste is my subject project with 3 teammates. It is used for managing coffee, drinks, books retail",
+        "technologies": {
+            "frontend": [
+                "ReactJS",
+                "Bootstrap",
+                "JQuery"
+            ],
+            "backend": [
+                "ASP.NET Web API",
+                "EntityFramework Core",
+                "MySQL"
+            ]
+        },
+        "img": "https://i.ibb.co/HKhrCh8/the-coffee-shop.png",
+        "source": "https://github.com/VHNhat/framework_IS220.M11.HTCL_2"
+    },
+    {
+        "name": "Music Player",
+        "description": "The Music Player is my personal project.This is a very simple webiste for listening to music. I built it after I learnt a basic JavaScript tutorial.",
+        "technologies": {
+            "frontend": [
+                "HTML5",
+                "CSS3",
+                "JavaScript"
+            ]
+        },
+        "img": "https://i.ibb.co/H7KR3zF/music-player.png",
+        "source": "https://github.com/hoanguyen2501/Music-Player"
+    }
+]

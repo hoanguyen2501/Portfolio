@@ -10,31 +10,153 @@ $(document).ready(() => {
         }
     }
 
-    window.addEventListener("scroll", scrollHeader);
+    $(window).scroll(scrollHeader);
+
+    /*=============== Import Skills From JSON ===============*/
+    function importSkills() {
+        let skillHtml = "";
+        $.getJSON("/assets/data/skills.json", function (json) {
+            json.forEach((item) => {
+                let html = `<div class="skills__group">
+                                <div class="skills__data">
+                                    <img
+                                        src="${item.img}"
+                                        alt="HTML"
+                                        class="skills__img"
+                                    />
+                                    <h3 class="skills__name">${item.name}</h3>
+                                </div>
+                            </div>`;
+                $(".skills__box").append(html);
+            });
+        });
+    }
+    importSkills();
+
+    /*=============== Import Project From JSON ===============*/
+    function importProjects() {
+        let projects = [];
+        $.getJSON("/assets/data/projects.json", {
+            tags: "mount rainier",
+            tagmode: "any",
+            format: "json"
+        }, function (json) {
+            json.forEach((item) => {
+                let html = `<div class="projects__group">
+                            <div class="projects__card">
+                                <div class="projects__img">
+                                    <img
+                                        src="${item.img}"
+                                        alt="The Coffee Shop"
+                                    />
+                                    <div class="overlay">
+                                        <a
+                                            href="${item.source}"
+                                            target="_blank"
+                                            class="overlay__button"
+                                        >
+                                            <i
+                                                class="bx bxl-github overlay__icon"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="projects__title">${item.name}</h3>
+                                <span class="projects__button"
+                                    >Details
+                                    <i
+                                        class="bx bx-right-arrow-alt projects__icon"
+                                    ></i
+                                ></span>
+                                <div class="projects__modal">
+                                    <div class="projects__modal-content">
+                                        <i
+                                            class="bx bx-x projects__modal-close"
+                                        ></i>
+                                        <h2 
+                                            class="projects__modal-title"
+                                            >${item.name}</h2>
+                                        <p class="projects__modal-description">${item.description}</p>
+                                        <h3 class="projects__modal-subtitle">Technologies we used</h3>
+                                        <ul class="projects__modal-list">
+                                            <li class="projects__modal-item">Frontend: ${item.technologies.frontend.join(", ")}
+                                            </li>
+                                            ${item.technologies.backend === undefined ? "" : `<li class="projects__modal-item">Backend: ${item.technologies.backend.join(", ")}
+                                            </li>`}
+                                            
+                                        </ul>
+                                        <a
+                                            href="${item.source}"
+                                            target="_blank"
+                                            class="projects__modal-link button"
+                                            >Source
+                                            <i
+                                                class="bx bxl-github projects__modal-icon"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+                $('.projects__content').append(html);
+            });
+        });
+    }
+    importProjects();
+
+    async function fetchData(type = "skills") {
+        let response;
+        type === "skills" ?
+            response = await fetch("skills.json")
+            :
+            response = await fetch("http://localhost:5500/assets/data/projects.json");
+        const data = await response.json();
+        return data;
+    }
+
+    // $(document).on('click', '.projects__button', function (event) {
+    //     const modalElement = $(this).siblings(".projects__modal");
+    //     modalElement.toggleClass("active-modal");
+    // });
+
+    // $(document).on('click', '.projects__modal-close', function (event) {
+    //     const parentElement = $(this).closest(".projects__modal");
+    //     parentElement.removeClass("active-modal");
+    // });
 
     /*=============== PROJECTS MODAL ===============*/
-    const modalBtns = $(".projects__button"),
-        modalCloseBtns = $(".projects__modal-close"),
-        modalViews = $(".projects__modal"),
-        modalContents = $(".projects__modal-content");
+    // const modalBtns = $(".projects__button"),
+    //     modalCloseBtns = $(".projects__modal-close"),
+    //     modalViews = $(".projects__modal"),
+    //     modalContents = $(".projects__modal-content");
 
-    modalBtns.click(function (event) {
-        const modalElement = $(this).siblings(".projects__modal");
-        modalElement.addClass("active-modal");
-    });
+    // modalBtns.click(function (event) {
+    //     const modalElement = $(this).siblings(".projects__modal");
+    //     modalElement.toggleClass("active-modal");
 
-    modalCloseBtns.click(function (event) {
-        const parentElement = $(this).closest(".projects__modal");
-        parentElement.removeClass("active-modal");
-    });
+    //     // if (modalElement.hasClass("active-modal")) {
+    //     //     $("body").css({
+    //     //         overflow: "hidden",
+    //     //     });
+    //     // } else {
+    //     //     $("body").css({
+    //     //         overflow: "auto",
+    //     //     });
+    //     // }
+    // });
 
-    modalContents.click(function (event) {
-        event.stopPropagation();
-    });
+    // modalCloseBtns.click(function (event) {
+    //     const parentElement = $(this).closest(".projects__modal");
+    //     parentElement.removeClass("active-modal");
+    // });
 
-    modalViews.click(function (event) {
-        $(this).removeClass("active-modal");
-    });
+    // modalContents.click(function (event) {
+    //     event.stopPropagation();
+    // });
+
+    // modalViews.click(function (event) {
+    //     $(this).removeClass("active-modal");
+    // });
 
     const copyright = $(".footer__copy");
     var currentYear = new Date().getFullYear();
