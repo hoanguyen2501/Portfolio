@@ -1,0 +1,82 @@
+/* ============= LIGHT THEME VARIABLES ============= */
+body.light-theme {
+  --first-hue: 54;
+  --sat: 0%;
+  --lig: 14%;
+  --second-hue: 52;
+
+  --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+  --first-alt-color: hsl(var(--second-hue), var(--sat), calc(var(--lig) - 4%));
+
+  --title-color: hsl(var(--second-hue), 100%, 8%);
+  --text-color: hsl(var(--second-hue), 100%, 4%);
+  --body-color: hsl(var(--second-hue), 100%, 99%);
+  --container-color: hsl(0, 0%, 100%);
+}
+
+/* ============= CSS LIGHT THEME ============= */
+.light-theme .nav__menu {
+  background-color: hsla(var(--second-hue), 55%, 8%, 0.75);
+}
+
+.light-theme .nav__link {
+  color: var(--body-color);
+}
+
+.light-theme .nav__link.nav__link--active {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.1)
+  );
+  box-shadow: 0 0 16px rgba(255, 255, 255, 1);
+  color: var(--title-color);
+}
+
+.light-theme .section__subtitle {
+  color: #333;
+}
+
+.light-theme .button:hover {
+  opacity: 0.8;
+}
+
+.light-theme .home__handle {
+  background-color: transparent;
+}
+
+.light-theme .home__img {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.light-theme .home__img-light {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+.light-theme .about__img {
+  transition: 0.5s;
+  filter: saturate(0);
+}
+
+.light-theme .about__img:hover {
+  filter: saturate(1);
+}
+
+.light-theme .about__box,
+.light-theme .skills__data,
+.light-theme .projects__card,
+.light-theme .contact__card {
+  box-shadow: 0 2px 6px hsla(var(--second-hue), 100%, 0%, 0.2);
+}
+
+.light-theme .overlay__icon {
+  color: var(--body-color);
+}
+
+.light-theme .overlay__icon:hover {
+  opacity: 0.5;
+}
