@@ -1,5 +1,6 @@
 /* ============= GOOGLE FONT ============= */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"); */
+@import url("fonts.css");
 
 /* ============= VARIABLES ============= */
 :root {
@@ -88,7 +89,7 @@ body,
 button,
 input,
 textarea {
-    font-family: var(--body-color);
+    font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
 
@@ -96,6 +97,7 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
     transition: 0.4s;
+    position: relative;
 }
 
 h1,
@@ -126,4 +128,5 @@ img {
 
 html.sr section {
     visibility: hidden;
+    position: initial;
 }

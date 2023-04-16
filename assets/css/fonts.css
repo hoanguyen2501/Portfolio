@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    src: url("./../fonts/Poppins/Poppins-Regular.ttf")
+        url("./../fonts/Poppins/Poppins-Bold.ttf")
+        url("./../fonts/Poppins/Poppins-Medium.ttf")
+        url("./../fonts/Poppins/Poppins-SemiBold.ttf");
+    font-weight: 300 700;
+}

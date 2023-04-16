@@ -1,0 +1,50 @@
+[
+    {
+        "name": "HTML5",
+        "img": "https://i.ibb.co/HC6VHBF/html5-logo.png"
+    },
+    {
+        "name": "CSS3",
+        "img": "https://i.ibb.co/M6K2S0N/css3-logo.png"
+    },
+    {
+        "name": "JavaScript",
+        "img": "https://i.ibb.co/9bT8qhF/javascript-logo.png"
+    },
+    {
+        "name": "C#",
+        "img": "https://i.ibb.co/sKqbc4G/csharp-logo.png"
+    },
+    {
+        "name": "JQuery",
+        "img": "https://i.ibb.co/Mcgc0Xq/jquery-logo.png"
+    },
+    {
+        "name": "Bootstrap",
+        "img": "https://i.ibb.co/khthjJr/bootstrap-logo.png"
+    },
+    {
+        "name": "ASP.NET Core",
+        "img": "https://i.ibb.co/CvFN04B/dotnet-core-logo.png"
+    },
+    {
+        "name": "NodeJS",
+        "img": "https://i.ibb.co/ZKXqhSv/nodejs-logo.png"
+    },
+    {
+        "name": "ExpressJS",
+        "img": "https://i.ibb.co/bWpznM6/expressjs-logo.png"
+    },
+    {
+        "name": "SQL Server",
+        "img": "https://i.ibb.co/ChsV9QG/sql-server-logo.png"
+    },
+    {
+        "name": "MySQL",
+        "img": "https://i.ibb.co/y4LV0Ss/mysql-logo.png"
+    },
+    {
+        "name": "MongoDB",
+        "img": "https://i.ibb.co/YtN61GF/mongodb-logo.png"
+    }
+]
