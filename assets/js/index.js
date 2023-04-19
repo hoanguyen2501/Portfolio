@@ -212,8 +212,8 @@ $(document).ready(() => {
         const sunIconTheme = "bx-sun";
 
         // Previously selected to topic (if user selected)
-        const selectedTheme = localStorage.getItem("selected-theme");
-        const selectedIcon = localStorage.getItem("selected-icon");
+        // const selectedTheme = localStorage.getItem("selected-theme");
+        // const selectedIcon = localStorage.getItem("selected-icon");
 
         // We obtain the current theme that the interface has by validating the dark-theme class
         const getCurrentTheme = () =>
@@ -222,16 +222,16 @@ $(document).ready(() => {
             themeBtn.hasClass(sunIconTheme) ? "bx bx-sun" : "bx bx-moon";
 
         // We validate if the user previously chosen topic
-        if (selectedTheme) {
-            // If the validattion is fulfilled, we ask what issue was to know if we activated or unactivated dark theme
-            selectedTheme === "light"
-                ? $("body").addClass(lightTheme)
-                : $("body").removeClass(lightTheme);
+        // if (selectedTheme) {
+        //     // If the validattion is fulfilled, we ask what issue was to know if we activated or unactivated dark theme
+        //     selectedTheme === "light"
+        //         ? $("body").addClass(lightTheme)
+        //         : $("body").removeClass(lightTheme);
 
-            selectedIcon === "bx bx-sun"
-                ? themeBtn.addClass(sunIconTheme)
-                : themeBtn.removeClass(sunIconTheme);
-        }
+        //     selectedIcon === "bx bx-sun"
+        //         ? themeBtn.addClass(sunIconTheme)
+        //         : themeBtn.removeClass(sunIconTheme);
+        // }
 
         // Activated / Unactivated the theme manually with the button
         themeBtn.click(function (event) {
