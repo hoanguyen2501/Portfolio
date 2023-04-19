@@ -59,11 +59,6 @@ body.light-theme {
 
 .light-theme .about__img {
   transition: 0.5s;
-  filter: saturate(0);
-}
-
-.light-theme .about__img:hover {
-  filter: saturate(1);
 }
 
 .light-theme .about__box,
